@@ -27,7 +27,7 @@ const CardList = ({
 
   let addBtnProps = {
     type: 'dashed',
-    children: '新增一条',
+    children: 'Add New Option',
   };
 
   if (props.addBtnProps && typeof props.addBtnProps === 'object') {

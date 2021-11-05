@@ -1,6 +1,6 @@
 {
-  "name": "fr-generator",
-  "version": "2.5.8",
+  "name": "@medisys/fr-generator",
+  "version": "2.5.801",
   "scripts": {
     "build": "father-build",
     "prepare": "npm run build",
@@ -44,5 +44,19 @@
   "devDependencies": {
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-copy": "^3.4.0"
-  }
+  },
+  "description": "```bash\r npm i fr-generator\r ```",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medisysinnovation/x-render.git"
+  },
+  "keywords": [
+    "fr-generator-english"
+  ],
+  "author": "medisys",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/medisysinnovation/x-render/issues"
+  },
+  "homepage": "https://github.com/medisysinnovation/x-render#readme"
 }
