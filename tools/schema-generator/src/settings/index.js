@@ -1,17 +1,17 @@
 // 只需写配置，方便可扩展
 export const baseCommonSettings = {
   type: {
-    title: '类型',
+    title: 'Type',
     type: 'string',
     hidden: '{{true}}',
   },
   widget: {
-    title: '组件',
+    title: 'Component',
     type: 'string',
     hidden: '{{true}}',
   },
   format: {
-    title: '格式',
+    title: 'Format',
     type: 'string',
     hidden: '{{true}}',
   },
@@ -20,36 +20,36 @@ export const baseCommonSettings = {
 export const defaultCommonSettings = {
   $id: {
     title: 'ID',
-    description: '字段名称/英文',
+    description: 'Variable Name',
     type: 'string',
     widget: 'idInput',
     required: true,
   },
   title: {
-    title: '标题',
+    title: 'Title',
     type: 'string',
   },
   displayType: {
-    title: '标题展示模式',
+    title: 'Display Type',
     type: 'string',
     enum: ['row', 'column'],
-    enumNames: ['同行', '单独一行'],
+    enumNames: ['Same Row', 'Individual Row'],
     widget: 'radio',
   },
   description: {
-    title: '说明',
+    title: 'Description',
     type: 'string',
   },
   default: {
-    title: '默认值',
+    title: 'Default',
     type: 'string',
   },
   required: {
-    title: '必填',
+    title: 'Required',
     type: 'boolean',
   },
   placeholder: {
-    title: '占位符',
+    title: 'Placeholder',
     type: 'string',
   },
   bind: {
@@ -57,37 +57,37 @@ export const defaultCommonSettings = {
     type: 'string',
   },
   min: {
-    title: '最小值',
+    title: 'Minimum',
     type: 'number',
   },
   max: {
-    title: '最大值',
+    title: 'Maximum',
     type: 'number',
   },
   disabled: {
-    title: '禁用',
+    title: 'Disabled',
     type: 'boolean',
   },
   readOnly: {
-    title: '只读',
+    title: 'ReadOnly',
     type: 'boolean',
   },
   hidden: {
-    title: '隐藏',
+    title: 'Hidden',
     type: 'boolean',
   },
   readOnlyWidget: {
-    title: '只读组件',
+    title: 'ReadOnly',
     type: 'string',
   },
   width: {
-    title: '元素宽度',
+    title: 'Width',
     type: 'string',
     widget: 'percentSlider',
   },
   labelWidth: {
-    title: '标签宽度',
-    description: '默认值120',
+    title: 'Height',
+    description: 'default 120',
     type: 'number',
     widget: 'slider',
     max: 400,

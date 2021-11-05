@@ -47,7 +47,9 @@ const FR = ({ id = '#', preview, displaySchema }) => {
   const isList = schema.type === 'array' && schema.enum === undefined;
   const isComplex = isObj || isList;
   const width = schema['width'];
-  let containerClass = `fr-field w-100 ${isComplex ? 'fr-field-complex' : ''} ${schema.className || ''}`;
+  let containerClass = `fr-field w-100 ${
+    isComplex ? 'fr-field-complex' : ''
+  } ${schema.className || ''}`;
   let labelClass = 'fr-label mb2';
   let contentClass = 'fr-content';
 
@@ -131,7 +133,7 @@ const FR = ({ id = '#', preview, displaySchema }) => {
         <div
           className={`${containerClass} h-100 f4 black-40 flex items-center justify-center`}
         >
-          点击/拖拽左侧栏的组件进行添加
+          Drag and Drop the component from Left Panel
         </div>
       </Wrapper>
     );

@@ -8,7 +8,7 @@ import React, {
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import { ConfigProvider } from 'antd';
-import zhCN from 'antd/lib/locale/zh_CN';
+import enUS from 'antd/lib/locale/en_US';
 import {
   widgets as defaultWidgets,
   mapping as defaultMapping,
@@ -57,8 +57,8 @@ function Provider(props, ref) {
     to: schema => schema,
     fromSetting,
     toSetting,
-    ..._transformer
-  }
+    ..._transformer,
+  };
 
   const frwRef = ref || useRef();
   const [state, setState] = useSet({
@@ -69,22 +69,17 @@ function Provider(props, ref) {
     schema: {},
     selected: undefined, // 被选中的$id, 如果object/array的内部，以首字母0标识
   });
-  const [itemError, setItemError] = useState([])
+  const [itemError, setItemError] = useState([]);
 
   // 收口点 propsSchema 到 schema 的转换 (一共3处，其他两个是 importSchema 和 setValue，在 FRWrapper 文件)
   useEffect(() => {
-    const schema = defaultValue ? transformer.from(defaultValue) : DEFAULT_SCHEMA;
+    const schema = defaultValue
+      ? transformer.from(defaultValue)
+      : DEFAULT_SCHEMA;
     if (schema) setState(schemaToState(schema));
   }, [defaultValue]);
 
-  const {
-    formData,
-    frProps,
-    isNewVersion,
-    preview,
-    schema,
-    selected,
-  } = state;
+  const { formData, frProps, isNewVersion, preview, schema, selected } = state;
 
   const onChange = data => {
     setState({ formData: data });
@@ -205,7 +200,7 @@ function Provider(props, ref) {
 
   return (
     <DndProvider backend={HTML5Backend} context={window}>
-      <ConfigProvider locale={zhCN}>
+      <ConfigProvider locale={enUS}>
         <Ctx.Provider value={setState}>
           <StoreCtx.Provider value={store}>{children}</StoreCtx.Provider>
         </Ctx.Provider>
