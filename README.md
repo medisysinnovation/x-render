@@ -26,7 +26,7 @@
 
 ## CN - EN Translation
 Translation has been done for 
-- FormRender
+- Schema Generator
 
 ## 优势
 
