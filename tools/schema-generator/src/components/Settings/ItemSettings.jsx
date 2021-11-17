@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import FormRender, { useForm } from 'form-render';
+import FormRender, { useForm } from '@medisys/form-render';
 import IdInput from '../../widgets/idInput';
 import PercentSlider from '../../widgets/percentSlider';
 import {
@@ -71,10 +71,14 @@ export default function ItemSettings({ widgets }) {
       if (!ready) return;
       const item = flatten[selected];
       if (item && item.schema) {
-        onItemChange(selected, {
-          ...item,
-          schema: transformer.fromSetting(value),
-        }, 'schema');
+        onItemChange(
+          selected,
+          {
+            ...item,
+            schema: transformer.fromSetting(value),
+          },
+          'schema'
+        );
       }
     } catch (error) {
       console.log('catch', error);
@@ -120,8 +124,8 @@ export default function ItemSettings({ widgets }) {
   }, [selected]);
 
   useEffect(() => {
-    onItemErrorChange(form?.errorFields)
-  }, [form?.errorFields])
+    onItemErrorChange(form?.errorFields);
+  }, [form?.errorFields]);
 
   return (
     <div style={{ paddingRight: 24 }}>
@@ -130,7 +134,7 @@ export default function ItemSettings({ widgets }) {
         schema={settingSchema}
         widgets={{ ..._widgets, ...widgets }}
         watch={{
-          '#': v => setTimeout(() => onDataChange(v), 0)
+          '#': v => setTimeout(() => onDataChange(v), 0),
         }}
       />
     </div>

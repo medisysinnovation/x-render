@@ -251,7 +251,7 @@ const fieldListHoc = (ButtonComponent, Pagination) => {
               <div className="tr">
                 {canAdd && (
                   <ButtonComponent icon="add" onClick={this.handleAddClick}>
-                    新增
+                    Add
                   </ButtonComponent>
                 )}
                 {buttons &&

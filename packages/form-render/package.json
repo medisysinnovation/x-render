@@ -1,25 +1,16 @@
 {
-  "name": "form-render",
-  "version": "v1.8.4-beta.2",
+  "name": "@medisys/form-render",
+  "version": "1.8.403",
   "description": "通过 JSON Schema 生成标准 Form，常用于自定义搭建配置界面生成",
   "repository": {
     "type": "git",
-    "url": "git@github.com:alibaba/form-render.git"
+    "url": "git+ssh://git@github.com/alibaba/form-render.git"
   },
   "license": "MIT",
   "contributors": [
-    {
-      "name": "Tw93",
-      "email": "tw93@qq.com"
-    },
-    {
-      "name": "mankaiviky",
-      "email": "mankaiviky@163.com"
-    },
-    {
-      "name": "FateRiddle",
-      "email": "fateriddle@gmail.com"
-    }
+    "Tw93 <tw93@qq.com>",
+    "mankaiviky <mankaiviky@163.com>",
+    "FateRiddle <fateriddle@gmail.com>"
   ],
   "scripts": {
     "build": "father-build",
@@ -74,5 +65,9 @@
   "homepage": "https://x-render.gitee.io/form-render",
   "bugs": {
     "url": "https://github.com/alibaba/x-render/issues"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "author": ""
 }

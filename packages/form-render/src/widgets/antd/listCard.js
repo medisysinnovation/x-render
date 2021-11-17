@@ -71,10 +71,10 @@ const CardList = ({
                 )}
                 {!props.hideDelete && (
                   <Popconfirm
-                    title="确定删除?"
+                    title="Delete Confirm?"
                     onConfirm={() => deleteItem(idx)}
-                    okText="确定"
-                    cancelText="取消"
+                    okText="Yes"
+                    cancelText="No"
                   >
                     <CloseOutlined style={{ fontSize: 16, marginLeft: 8 }} />
                   </Popconfirm>

@@ -91,12 +91,12 @@ const DrawerList = ({
           <a onClick={() => openDrawer(index)}>编辑</a>
           {!props.hideDelete && (
             <Popconfirm
-              title="确定删除?"
+              title="Delete Confirm?"
               onConfirm={() => deleteItem(index)}
-              okText="确定"
-              cancelText="取消"
+              okText="Yes"
+              cancelText="No"
             >
-              <a style={{ marginLeft: 8 }}>删除</a>
+              <a style={{ marginLeft: 8 }}>Delete</a>
             </Popconfirm>
           )}
           {!props.hideMove && (
@@ -142,7 +142,7 @@ const DrawerList = ({
       <div className="w-100 mb2 tr">
         {!props.hideAdd && (
           <Button type="primary" size="small" onClick={handleAdd}>
-            新增
+            Add
           </Button>
         )}
         {Array.isArray(props.buttons)

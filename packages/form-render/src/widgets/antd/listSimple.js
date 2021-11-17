@@ -45,10 +45,10 @@ const SimpleList = ({
             <div style={{ marginTop: 6 }}>
               {!props.hideDelete && (
                 <Popconfirm
-                  title="确定删除?"
+                  title="Delete Confirm?"
                   onConfirm={() => deleteItem(idx)}
-                  okText="确定"
-                  cancelText="取消"
+                  okText="Yes"
+                  cancelText="No"
                 >
                   <DeleteOutlined style={{ fontSize: 17, marginLeft: 8 }} />
                 </Popconfirm>

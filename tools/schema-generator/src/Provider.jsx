@@ -12,7 +12,7 @@ import enUS from 'antd/lib/locale/en_US';
 import {
   widgets as defaultWidgets,
   mapping as defaultMapping,
-} from 'form-render';
+} from '@medisys/form-render';
 import copyTOClipboard from 'copy-text-to-clipboard';
 import {
   flattenSchema,

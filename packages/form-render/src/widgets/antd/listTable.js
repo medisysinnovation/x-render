@@ -85,12 +85,12 @@ const TableList = ({
             )}
             {!props.hideDelete && (
               <Popconfirm
-                title="确定删除?"
+                title="Delete Confirm?"
                 onConfirm={() => deleteItem(idx)}
-                okText="确定"
-                cancelText="取消"
+                okText="Yes"
+                cancelText="No"
               >
-                <a>删除</a>
+                <a>Delete</a>
               </Popconfirm>
             )}
             {!props.hideMove && (
@@ -116,7 +116,7 @@ const TableList = ({
       <div className="w-100 mb2 tr">
         {!props.hideAdd && (
           <Button type="primary" size="small" onClick={addItem}>
-            新增
+            Add
           </Button>
         )}
         {Array.isArray(props.buttons)

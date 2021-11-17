@@ -1,5 +1,5 @@
 import React from 'react';
-import FormRender from 'form-render/lib/antd';
+import FormRender from '@medisys/form-render';
 import './index.less';
 
 interface FormProps {
@@ -12,21 +12,21 @@ const Form: React.FC<FormProps> = ({ value, onChange = () => {} }) => {
     type: 'object',
     properties: {
       tag: {
-        title: '标签',
+        title: 'Tag',
         type: 'string',
         'ui:options': {
-          placeholder: '请输入',
+          placeholder: 'Please Enter',
         },
       },
       phone: {
-        title: '电话',
+        title: 'Phone No',
         type: 'string',
         'ui:options': {
-          placeholder: '请输入',
+          placeholder: 'Please Enter',
         },
       },
       address: {
-        title: '地址',
+        title: 'Address',
         type: 'string',
       },
     },
